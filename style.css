@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+.calc {
+    margin: 50px auto;
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgb(25, 33, 37);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 18px;
+}
+/* смена класса */
+.calc1 {
+    margin: 50px auto;
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: rgb(52, 52, 52);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 18px;
+    border: 1px solid rgb(159, 159, 159);
+}
+.topic {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 0;
+    background: url(солнце.svg);
+    background-size: cover;
+    cursor: pointer;
+}
+ /* смена класса */
+.topic1 {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 0;
+    background: url(месяц.png);
+    background-size: cover;
+}
+.calc-screen {
+    height: 100px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 25px;
+}
+.calc-screen p {
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "ac plus-minus percent division"
+    "seven eight nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+.bt1 {
+    border-radius: 0;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+.btn:hover {
+    filter: brightness(120%);
+}
+.btn:active {
+    filter: brightness(90%);
+}
+.btn.bg-g {
+    background-color: #4f4f4f;
+    color: #fff;
+}
+ /* смена класса */
+.btn.bg-g1 {
+    background-color: #fff;
+    color: rgb(49, 49, 49);
+}
+.btn.bg-o {
+    background-color: #ffffff;
+    color: rgb(45, 112, 103);
+}
+@media screen and (max-width:576px) {
+   
+    body{
+        position: fixed;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .calc {
+        
+    
+        width: 92%;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+    }
+    /* смена класса */
+    .calc1 {
+        
+        width: 92%;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+    }
+    .calc-screen {
+        margin-bottom: 15%;
+    }
+    .btn {
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        font-size: 30px;
+    }
+    .bt1 {
+        width: 97px;
+        height: 75px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 20px;
+        cursor: pointer;
+        user-select: none;
+        
+    
+    }
+}
